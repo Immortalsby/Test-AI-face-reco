@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script defer src="face-api.min.js"></script>
+    <script defer src="script.js"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        canvas{
+            position: absolute;
+        }
+        .intro{
+            position: fixed;
+            top:0;
+        }
+        small {
+            font-size: 9px;
+            width: 100%;
+        }
+        footer {
+            position: fixed;
+            bottom: 10px;
+            font-size: 11px;
+            text-align: center;
+     }
+    </style>
+</head>
+<body>
+    <div class="intro">
+    <h3 style="text-align: center; margin-bottom: 0px ;">AI Face Detector Demo</h3>
+    <small style="color: red;">Please make sure that your device has a cam, and please allow your navigator to use your webcam</small><br>
+    </div>
+    <video id="video" width="720" height="560" autoplay muted></video>
+    <footer>
+            <small><i>Thanks to justadudewhohacks to build this amazing face API, <a href="https://github.com/justadudewhohacks/face-api.js" target="_blanc">go and check out!</a></i></small><br>Implemented by <a href="boyuanshi.com" target="_blanc">Boyuanshi</a>, more features will be added soon...</footer>
+</body>
+</html>
